@@ -1,0 +1,45 @@
+.deska {
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 430px; ;
+    background-color: grey;
+    width: 500px;
+    height: 500px;
+}
+
+.deskahry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rada {
+    display: flex;
+}
+
+.pole {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 250px;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    background-color: gray;
+    border: solid black;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: center;
+    width: 500;
+}
