@@ -1,11 +1,21 @@
 .deska {
-    
+    border: solid black;
     display: flex;
     justify-content: center;
-    margin-left: 430px; ;
-    background-color: grey;
-    width: 500px;
-    height: 500px;
+    align-items: center;
+    width: 225px;
+    height: 200px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 42%;
+}
+
+.hra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .deskahry {
@@ -15,18 +25,37 @@
     align-items: center;
 }
 
-.rada {
+.rada{
     display: flex;
+}
+.rada1{
+    display: flex;
+}
+.nic{
+    width:30px;
+    height: 30px;
+    margin: 4px;
+}
+.trasa{
+    font-size: 20px;
+    text-align: center;
+    border: solid black;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    border-radius: 5px;
+    
 }
 
 .pole {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 250px;
+    text-align:center;
+    font-size: 100px;
+    margin-bottom: 20px;
 }
 
 .start{
@@ -42,4 +71,50 @@ button{
     margin: 20px;
     justify-content: center;
     width: 500;
+}
+#A1,#A2,#A3,#A4,#B1,#B2,#B3,#B4,#C1,#C2,#C3,#C4,#D1,#D2,#D3,#D4{
+    font-size: 20px;
+    text-align: center;
+    border: solid black;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    border-radius: 5px;
+}
+#A1,#A2,#A3,#A4,#trasa101,#trasa102,#trasa103,#trasa104,#trasa33{
+ background-color: rgb(252, 252, 173);
+ font-size: 20px;
+
+}
+
+#B1,#B2,#B3,#B4,#trasa111,#trasa112,#trasa113,#trasa114,#trasa3{
+background-color: rgb(121, 237, 250);
+font-size: 20px;
+
+}
+
+#C1,#C2,#C3,#C4,#trasa131,#trasa132,#trasa133,#trasa134,#trasa23{
+    background-color: rgb(135, 237, 135);
+    font-size: 20px;
+
+}
+
+#D1,#D2,#D3,#D4,#trasa121,#trasa122,#trasa123,#trasa124,#trasa13{
+    background-color: rgb(254, 138, 138);
+    font-size: 20px;
+
+}
+
+p{
+    display: flex;
+    background-color: gray;
+    border: solid black;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: center;
+    width: 500;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
 }

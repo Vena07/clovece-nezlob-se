@@ -4,12 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Člověče nezlob se</title>
-    <link rel="stylesheet" href="vzhled.css">
+    <link rel="stylesheet" href="vzhled.css">   
     <script src="funkce.js"></script>
 </head>
 <body>
-    <div class="deska">
-        <div class="deskahry">
+    <div class="hra">
+
+        <h1>Člověče nezlob se</h1>
+        <div class="aktualita">
+            <p id="aktualita">☀️</p>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa1" onclick="pohyb(1)"></div>
+            <div class="trasa" id="trasa2" onclick="pohyb(2)"></div>
+            <div class="trasa" id="trasa3" onclick="pohyb(3)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="A1" onclick="nasadit('A1')">☀️</div>
+            <div class="trasa" id="A2" onclick="nasadit('A2')">☀️</div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa40" onclick="pohyb(40)"></div>
+            <div class="trasa" id="trasa111" onclick="pohyb(111)"></div>
+            <div class="trasa" id="trasa4" onclick="pohyb(4)"></div>
+            <div class="nic" id="trasa2"></div>
+            <div class="trasa" id="B1" onclick="nasadit('B1')">💧</div>
+            <div class="trasa" id="B2" onclick="nasadit('B1')">💧</div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="A3" onclick="nasadit('A3')">☀️</div>
+            <div class="trasa" id="A4" onclick="nasadit('A4')">☀️</div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa39" onclick="pohyb(39)"></div>
+            <div class="trasa" id="trasa112" onclick="pohyb(112)"></div>
+            <div class="trasa" id="trasa5" onclick="pohyb(5)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="B3" onclick="nasadit('B3')">💧</div>
+            <div class="trasa" id="B4" onclick="nasadit('B4')">💧</div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa38" onclick="pohyb(38)"></div>
+            <div class="trasa" id="trasa113" onclick="pohyb(13)"></div>
+            <div class="trasa" id="trasa6" onclick="pohyb(6)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="trasa" id="trasa33" onclick="pohyb(33)"></div>
+            <div class="trasa" id="trasa34" onclick="pohyb(34)"></div>
+            <div class="trasa" id="trasa35" onclick="pohyb(35)"></div>
+            <div class="trasa" id="trasa36" onclick="pohyb(36)"></div>
+            <div class="trasa" id="trasa37" onclick="pohyb(37)"></div>
+            <div class="trasa" id="trasa114" onclick="pohyb(114)"></div>
+            <div class="trasa" id="trasa7" onclick="pohyb(7)"></div>
+            <div class="trasa" id="trasa8" onclick="pohyb(8)"></div>
+            <div class="trasa" id="trasa9" onclick="pohyb(9)"></div>
+            <div class="trasa" id="trasa10" onclick="pohyb(10)"></div>
+            <div class="trasa" id="trasa11" onclick="pohyb(11)"></div>
+        </div>
+        <div class="rada1">
+            <div class="trasa" id="trasa32" onclick="pohyb(32)"></div>
+            <div class="trasa" id="trasa101" onclick="pohyb(101)"></div>
+            <div class="trasa" id="trasa102" onclick="pohyb(102)"></div>
+            <div class="trasa" id="trasa103" onclick="pohyb(103)"></div>
+            <div class="trasa" id="trasa104" onclick="pohyb(104)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa124" onclick="pohyb(124)"></div>
+            <div class="trasa" id="trasa123" onclick="pohyb(123)"></div>
+            <div class="trasa" id="trasa122" onclick="pohyb(122)"></div>
+            <div class="trasa" id="trasa121" onclick="pohyb(121)"></div>
+            <div class="trasa" id="trasa12" onclick="pohyb(12)"></div>
+        </div>
+        <div class="rada1">
+            <div class="trasa" id="trasa31" onclick="pohyb(31)"></div>
+            <div class="trasa" id="trasa30" onclick="pohyb(30)"></div>
+            <div class="trasa" id="trasa29" onclick="pohyb(29)"></div>
+            <div class="trasa" id="trasa28" onclick="pohyb(28)"></div>
+            <div class="trasa" id="trasa27" onclick="pohyb(27)"></div>
+            <div class="trasa" id="trasa134" onclick="pohyb(134)"></div>
+            <div class="trasa" id="trasa17" onclick="pohyb(17)"></div>
+            <div class="trasa" id="trasa16" onclick="pohyb(16)"></div>
+            <div class="trasa" id="trasa15" onclick="pohyb(15)"></div>
+            <div class="trasa" id="trasa14" onclick="pohyb(14)"></div>
+            <div class="trasa" id="trasa13" onclick="pohyb(13)"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa26" onclick="pohyb(26)"></div>
+            <div class="trasa" id="trasa133" onclick="pohyb(133)"></div>
+            <div class="trasa" id="trasa18" onclick="pohyb(18)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="C1" onclick="nasadit('C1')">🍀</div>
+            <div class="trasa" id="C2" onclick="nasadit('C2')">🍀</div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa25" onclick="pohyb(25)"></div>
+            <div class="trasa" id="trasa132" onclick="pohyb(132)"></div>
+            <div class="trasa" id="trasa19" onclick="pohyb(19)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="D1" onclick="nasadit('D1')">❤️</div>
+            <div class="trasa" id="D2" onclick="nasadit('D2')">❤️</div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="C3" onclick="nasadit('C3')">🍀</div>
+            <div class="trasa" id="C4" onclick="nasadit('C4')">🍀</div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa24" onclick="pohyb(24)"></div>
+            <div class="trasa" id="trasa131" onclick="pohyb(131)"></div>
+            <div class="trasa" id="trasa20" onclick="pohyb(20)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="D3" onclick="nasadit('D3')">❤️</div>
+            <div class="trasa" id="D4" onclick="nasadit('D4')">❤️</div>
+            <div class="nic" id="trasa"></div>
+        </div>
+        <div class="rada1">
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="trasa" id="trasa23" onclick="pohyb(23)"></div>
+            <div class="trasa" id="trasa22" onclick="pohyb(22)"></div>
+            <div class="trasa" id="trasa21" onclick="pohyb(21)"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+            <div class="nic" id="trasa"></div>
+        </div>
+    </div>    
+    <div class="deska">        
+        <div class="deskahry" onclick="hod()">
             <div class="rada">
                 <div class="pole" id="pole1"></div>
                 <div class="pole" id="pole2"></div>
@@ -26,9 +176,8 @@
                 <div class="pole" id="pole9"></div>
             </div>
         </div>
+        
     </div>
-    <div class="start">
-        <button onclick="hod()">hod kostkou</button>
-    </div>
+
 </body>
 </html>
